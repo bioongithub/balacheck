@@ -1,5 +1,5 @@
 # balacheck
-PyQt script to balance checkbooks. Open source.
+PyQt script to balance checkbooks. Open source. Work in progress.
 
 ## Idea
 Idea is to collect transaction from banks and payed, scheduled and current payments, show expected balances and
@@ -21,4 +21,24 @@ UI has 4 pages (dialog tab windows):
 
 ### Month payments
 Month payments page contains tab page for each month. Month page contains list of payments, scheduled for this month.
-Month is selected as a tab. Current month payments are represented as a table. Each payment is a 
+Month is selected as a tab. Current month payments are represented as a table. Each payment is a table row.
+There are columns:
+- Name of bill source. 
+- Billed amount
+- Due date of the payment
+- Date when bill has been payed or blank, if it's not.
+- To pay: amount has been payed
+- Payed by: type of paymet (by check or online transfer) and name of bank
+
+### Banks
+
+### Payments
+The Payments page contains a table of payments. It might be recurent or scheduled (but not payed) one-time payments.
+Each payment is represented by row. There are columns:
+- Name of payment destination
+- Amont to be payed
+- Due date of the payment
+- Period of payment, if it's recurrent payment
+- Bank name from which payment already made or from which bank it will be done for automatic payments
+
+### Incomes

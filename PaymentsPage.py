@@ -4,7 +4,7 @@ from PyQt5.QtWidgets import *
 from PyQt5.QtCore import *
 from PyQt5 import QtGui
 
-from MyUtils import LoadFromUI
+from Utils import LoadFromUI
 
 class PaymentsPage:
   def __init__(self, root, page):

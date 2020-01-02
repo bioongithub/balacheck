@@ -121,8 +121,8 @@ class FinanceDB:
 
   def getMonthData(self, month):
     # TODO:
-    return self.payments
+    return []
 
   def getPaymentsList(self):
     # TODO:
-    return self.payments
+    return []
